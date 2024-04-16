@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ffd9bb;
+    transition: background-color 1.5s;
+}
+  
+.amanecer {
+    background-color: #e3aef2;
+    background-image: url('Video/wind.gif');
+    background-repeat: repeat; 
+    background-size: auto;
+}
+  
+.dia {
+    background-color: #77d1f0;
+    background-image: url('Video/clouds.gif');
+    background-repeat: repeat; 
+    background-size: auto;
+}
+  
+.noche {
+    background-color: #212170;
+    background-image: url('Video/rain.gif');
+    background-repeat: repeat; 
+    background-size: auto;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('Fonts/DS-DIGII.TTF'); 
+}
+
+.title {
+    font-family: 'digital-clock-font';
+    font-size: 4rem;
+    text-shadow: 0.5px 0.5px 60px black;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    color: #fffffff5;
+    background-color: transparent;
+    background-image: none;
+}
+
+.time {
+    font-family: 'digital-clock-font';
+    color: rgb(255, 85, 0);
+    font-size: 4rem;   
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    background-image: none;
+}
+
+.explanation {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    width: 130vh;
+    margin-left: 40vh;
+    margin-top: -5vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.499);
+    padding: 8px;
+    border-radius: 10px;
+    background-image: none;
+}
+
+.explanation a {
+    background-color: transparent;
+    background-image: none;
+}
+
+.clock {
+    max-height: 80vh;
+    max-width: 80vh;
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    background-image: none;
+    padding: 0;
+}
+
+.clock img {
+    max-height: 80vh;
+    max-width: 80vh;
+    width: 100%;
+    background-color: transparent;
+    transition: transform 0.2s;
+    background-image: none;
+}
+
+.clock img:hover{
+    transform: scale(1.01);
+}
+
+.clock img:active {
+    animation-name: aumentar; 
+    animation-duration: 1s; 
+}
+
+.mute {
+    border-radius: 100%;
+    font-size: 2.5rem;
+    border: none;
+    background-color: rgba(22, 22, 22, 0.353);
+    padding: 10px;
+    margin-left: 5vh;
+    transition: background-color 1.5s;
+    transition: transform 0.2s;
+}
+
+.mute:hover {
+
+    background-color: rgba(109, 109, 109, 0.353);
+    transform: scale(1.1);
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.mute:active {
+    animation-name: aumentar; 
+    animation-duration: 0.3s; 
+}
+
+.mute img {
+    background-color: transparent;
+    width: 100%;
+    height: 5vh;
+}
+
+/* Estilos para tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .title {
+        font-size: 4rem;
+        top: 10%;
+        left: 25%;
+    }
+
+    .time {
+        font-size: 6rem;   
+        position: absolute;
+        top: 43%;
+        left: 50%;
+    }
+
+    .clock {
+        max-height: 110vh;
+        max-width: 110vh;
+        position: relative;
+        top: 40%; 
+        left: 50%;
+    }
+
+    .clock img {
+        max-height: 550vh;
+        max-width: 550vh;
+        width: 100%;
+    }
+
+    .explanation {
+        font-size: 2rem;
+        width: 60vh;
+        margin-left: 3.5vh;
+        margin-top: -10vh;
+        text-align: center;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .mute {
+        border-radius: 100%;
+        font-size: 2.5rem;
+        border: none;
+        background-color: rgba(22, 22, 22, 0.353);
+        padding: 10px;
+        margin-left: 30vh;
+        margin-top: 2vh;
+        transition: background-color 1.5s;
+        transition: transform 0.2s;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .title {
+        font-size: 3rem;
+        top: 10%;
+        left: 15%;
+    }
+
+    .time {
+        font-size: 4rem;   
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    .clock {
+        max-height: 110vh;
+        max-width: 110vh;
+        position: relative;
+        top: 40%; 
+        left: 50%;
+    }
+
+    .clock img {
+        max-height: 550vh;
+        max-width: 550vh;
+        width: 100%;
+    }
+
+    .explanation {
+        font-size: 1rem;
+        width: 40vh;
+        margin-left: 1.5vh;
+        margin-top: 10vh;
+        text-align: center;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .mute {
+        border-radius: 100%;
+        font-size: 2.5rem;
+        border: none;
+        background-color: rgba(22, 22, 22, 0.353);
+        padding: 10px;
+        margin-left: 18vh;
+        margin-top: 2vh;
+        transition: background-color 1.5s;
+        transition: transform 0.2s;
+    }
+}
+
+
+/* Estilos para dispositivos móviles muy chiquitos */
+@media (max-width: 670px) {
+    .title {
+        font-size: 3rem;
+        top: 10%;
+        left: 15%;
+    }
+
+    .time {
+        font-size: 4rem;   
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    .clock {
+        max-height: 110vh;
+        max-width: 110vh;
+        position: relative;
+        top: 40%; 
+        left: 50%;
+    }
+
+    .clock img {
+        max-height: 550vh;
+        max-width: 550vh;
+        width: 100%;
+    }
+
+    .explanation {
+        font-size: 1rem;
+        width: 40vh;
+        margin-left: 7vh;
+        margin-top: -2vh;
+        text-align: center;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .mute {
+        border-radius: 100%;
+        font-size: 2.5rem;
+        border: none;
+        background-color: rgba(22, 22, 22, 0.353);
+        padding: 10px;
+        margin-left: 24vh;
+        margin-top: 2vh;
+        transition: background-color 1.5s;
+        transition: transform 0.2s;
+    }
+}

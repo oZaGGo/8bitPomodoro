@@ -1,0 +1,35 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>8Pomodoro</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="title">8-BIT Pomodoro</h1>
+    
+    <div class="clock">
+        <img id="clock" src="Image/clock.png" alt="8Clock" class="image-clock">
+        <h2 id="contador" class="time">READY?</h2>
+    </div>
+
+    <h2 class="explanation">The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a kitchen timer to break work into intervals, typically 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student. <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Learn more.</a></h2>
+    
+    <button id="mute-b" class="mute"><img id="soundImage" src="Image/button-sound.png" alt="sound"></button>
+
+    <audio id="musicaFondo" loop>
+        <source src="Audio/music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tic">
+        <source src="Audio/Effects/click.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bloop">
+        <source src="Audio/Effects/bloop.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="break">
+        <source src="Audio/Effects/break.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
