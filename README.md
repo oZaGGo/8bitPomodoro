@@ -16,3 +16,14 @@ This project was a significant learning experience for me, highlighting the impo
 Throughout the development process, I also leveraged interactive assistance from AI models like ChatGPT, which provided valuable insights and support.
 
 Ultimately, this project not only served as a learning exercise but also provided a practical tool for personal use. It represents my journey in web development, showcasing my growth from a beginner to a more confident and resourceful developer.
+
+![image](https://github.com/oZaGGo/8bitPomodoro/assets/113898233/2c70b931-55fd-4c07-ac80-aeda98070330)
+
+
+![image](https://github.com/oZaGGo/8bitPomodoro/assets/113898233/431042ef-e7e4-4ab9-a64d-4844b342fd55)
+
+
+![image](https://github.com/oZaGGo/8bitPomodoro/assets/113898233/3fbd7490-3f30-45fd-9302-50e843784798)
+
+
+
